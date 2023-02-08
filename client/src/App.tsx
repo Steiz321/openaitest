@@ -26,7 +26,7 @@ const App = () => {
         setPrompt('');
 
         const article = { prompt };
-        const response = await axios.post('http://localhost:5000/api', article);
+        const response = await axios.post('https://testopenai.onrender.com/api', article);
         console.log(response.data.message)
         setMessages(prev => [...prev, {isAi: true, message: response.data.message}]);
     }
