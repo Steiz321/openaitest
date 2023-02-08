@@ -1,0 +1,7 @@
+.messagesWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: scroll;
+}
